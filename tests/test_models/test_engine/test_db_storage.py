@@ -1,7 +1,5 @@
-i#!/usr/bin/python3
-"""
-Contains the TestDBStorageDocs and TestDBStorage classes
-"""
+#!/usr/bin/python3
+"""Contains the TestDBStorageDocs and TestDBStorage classes"""
 
 from datetime import datetime
 import inspect
@@ -19,6 +17,8 @@ import os
 import pep8
 import unittest
 from models import storage
+
+
 DBStorage = db_storage.DBStorage
 classes = {"Amenity": Amenity, "City": City, "Place": Place,
            "Review": Review, "State": State, "User": User}
