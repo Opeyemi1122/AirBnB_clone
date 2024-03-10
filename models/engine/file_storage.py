@@ -3,11 +3,12 @@
 import json
 from models.base_model import BaseModel
 from models.user import User
-#from models.state import State
-#from models.city import City
-#from models.place import Place
-#from models.amenity import Amenity
-#from models.review import Review
+# from models.state import State
+# from models.city import City
+# from models.place import Place
+# from models.amenity import Amenity
+# from models.review import Review
+
 
 class FileStorage:
     """represents an abstracted storage engine.
@@ -23,12 +24,12 @@ class FileStorage:
     def all(self):
         """returns dictionary __objects."""
         return FileStorage.__objects
-    
+
     def new(self, obj):
         """set in __objects with key <obj_class_name>.id"""
         ocname = obj.__class__.__name__
         FileStorage.__objects["{}.{}".format(ocname, obj.id)] = obj
-    
+
     def save(self):
         """serializes __objects to the JSON file __file_path."""
         odict = FileStorage.__objects
