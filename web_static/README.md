@@ -1,2 +1,2 @@
 ## Web static readme file created.
-# Authored by Opeyemi Alabi
+# Authored by Opeyemi Alabi & Ashlame Sunday
